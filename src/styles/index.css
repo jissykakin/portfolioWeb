@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Smooch+Sans:wght@100..900&display=swap');
+
+
+@import "tailwindcss";
+@import "tailwindcss-animated";
+
+
+@theme {
+
+    /* 🎨 Colores */
+    
+    --color-primary: #F85D42;
+    --color-primary-shadow: #DF4646;
+    --color-secondary: #1E1E1E;
+    --color-graydark: #707070;
+    --color-graymedium: #959595;
+    --color-graylight: #EFEFEF;
+  
+    /* 🔤 Fuentes */
+    --font-poppins: 'Poppins', sans-serif;
+    --font-ibm-plex-sans: 'IBM Plex Sans', sans-serif; 
+    --font-ibm-plex-sans-condensed: 'IBM Plex Sans Condensed', sans-serif;
+    --font-smooch-sans : 'Smooch Sans', sans-serif
+
+
+    /* 🔤 Animation */
+    --animate-wigg: fade-right 1s ease-out forwards;
+  @keyframes wigg {
+    0%,
+    {
+        opacity: 0; 
+        transform: 'translateY(40px)'
+    }
+    100% {
+        opacity: 1;
+        transform:  'translateY(0)';
+    }
+  }
+}
+
+.perspective {
+    perspective: 1000px;
+  }
+  
+  .transform-style {
+    transform-style: preserve-3d;
+  }
+  
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+
+
