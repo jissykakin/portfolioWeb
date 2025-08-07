@@ -14,6 +14,7 @@ i18n
     backend: {
       loadPath: '/locales/{{lng}}/{{ns}}.json',
     },
+    load: 'languageOnly',
 
     interpolation: {
       escapeValue: false, // React ya hace escaping
