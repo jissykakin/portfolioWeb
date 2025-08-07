@@ -11,7 +11,7 @@ export default function FloatingButton({
   return (
     <button
       className={`absolute ${positionClass}  bottom-0 text-sm font-ibm-plex-sans
-       inline-flex items-center gap-4 bg-secondary text-white px-10 py-2 hover:bg-gray-800 transition ${className}`}
+       inline-flex items-center gap-4 bg-secondary dark:bg-white dark:text-secondary text-white px-10 py-2 hover:bg-primary transition ${className}`}
       {...props}
     >
       {children}

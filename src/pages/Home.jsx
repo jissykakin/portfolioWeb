@@ -15,17 +15,17 @@ export const Home = () => {
   return (
     <>
     
-       <section className="min-h-full bg-white h-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-[65%_35%] gap-4 pb-20 ">
+       <section className="min-h-full bg-white h-full dark:bg-secondary" >
+        <div className="grid grid-cols-1  lg:grid-cols-[65%_35%]  w-full h-full">
           
           {/* Columna izquierda */}
-          <div className="flex flex-col ">
+          <div className="flex flex-col h-full ">
             <HeaderHome />
             <HeroHome />
           </div>
 
           {/* Columna derecha */}
-          <div className="flex flex-col w-full h-auto  bg-amber-900">
+          <div className="flex flex-col flex-nowrap w-full h-full bg-amber-700 ">
             <BannerHome />
           </div>
         </div>

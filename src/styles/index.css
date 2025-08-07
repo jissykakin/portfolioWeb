@@ -4,6 +4,17 @@
 @import "tailwindcss";
 @import "tailwindcss-animated";
 
+@import "tailwindcss";
+
+@layer base {
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: light;
+    }
+  }
+}
+
+@custom-variant dark (&:where(.dark &));
 
 @theme {
 

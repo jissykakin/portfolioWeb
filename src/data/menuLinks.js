@@ -1,10 +1,10 @@
 const menuLinks = [
-    { label: 'Home', path: '/' },
-    { label: 'About', path: '/about' },
-    { label: 'Portfolio', path: '/portfolio' },
-    { label: 'Resume', path: '/resume' },
-    { label: 'Skills', path: '/skills' },
-    { label: 'Contact', path: '/contact' }
-  ];
+  { label: 'menu.home', path: '/' },
+  { label: 'menu.about', path: '/about' },
+  { label: 'menu.portfolio', path: '/portfolio' },
+  { label: 'menu.resume', path: '/resume' },
+  { label: 'menu.skills', path: '/skills' },
+  { label: 'menu.contact', path: '/contact' }
+];
   
   export default menuLinks;

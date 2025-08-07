@@ -7,6 +7,7 @@ import {
   FaDribbble,
   FaCircleUp,
 } from "react-icons/fa6";
+import { socialLinks } from "../../../data/socialLinks";
 
 export default function ContactSection() {
   return (
@@ -14,11 +15,11 @@ export default function ContactSection() {
       <div className="max-w-5xl mx-auto">
         {/* Título */}
         <h2 className="text-4xl md:text-5xl font-semibold text-center mb-12">
-          Send me a <span className="text-red-500">message</span>, I will be in touch with you shortly.
+          Send me a <span className="text-primary">message</span>, I will be in touch with you shortly.
         </h2>
 
         {/* Formulario */}
-        <form className="grid md:grid-cols-2 gap-6">
+        <form className="grid md:grid-cols-3 gap-6">
           <input
             type="text"
             placeholder="Your Name"
@@ -43,37 +44,44 @@ export default function ContactSection() {
           <div className="col-span-2 md:col-start-2 flex justify-end">
             <button
               type="submit"
-              className="bg-red-500 text-white px-6 py-2 rounded flex items-center gap-2 hover:bg-red-600 transition"
+              className="bg-primary text-white px-6 py-2 flex items-center gap-2 hover:bg-primary-shadow transition"
             >
               <FaEnvelope /> Send Message
             </button>
           </div>
         </form>
 
-        {/* Íconos sociales */}
-        <div className="flex justify-center mt-10 gap-4 text-gray-300 text-xl">
-          <FaDribbble />
-          <FaCircleUp />
-          <FaYoutube />
-          <FaLinkedin />
-          <FaGithub />
-        </div>
+        {/* Íconos sociales */}   
+         <div className="flex flex-row  justify-center mt-8 gap-2 text-3xl text-white dark:text-white">
+              {socialLinks.map(({ icon: Icon, url, name }) => (
+                <a
+                  key={name}
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 rounded-3xl hover:bg-primary hover:text-secondary  transition duration-300 hover:-translate-y-1 hover:scale-110 "
+                  aria-label={name}
+                >
+                  <Icon />
+                </a>
+              ))}
+            </div>
 
         {/* Email y Teléfono */}
         <div className="flex justify-center gap-8 text-sm mt-6 text-gray-400 flex-wrap">
           <div className="flex items-center gap-2">
             <FaEnvelope />
-            <span>Mahmood.fazile7005@gmail.com</span>
+            <span>sicaji22@gmail.com</span>
           </div>
           <div className="flex items-center gap-2">
             <FaPhone />
-            <span>+93 729 107 005</span>
+            <span>+57 300 8023 042</span>
           </div>
         </div>
 
         {/* Footer */}
         <p className="text-center text-gray-500 text-sm mt-10">
-          Created by <span className="font-semibold text-white">Zarror</span> | All Reserved!
+          Copyright ©2025 <span className="font-semibold text-white">Jissy Merlano </span> All right reserved.!
         </p>
       </div>
     </section>

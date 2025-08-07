@@ -2,22 +2,21 @@ import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { FaSun, FaMoon, FaBars, FaTimes } from 'react-icons/fa';
 import menuLinks from '../../data/menuLinks';
+import ThemeToggle from '../common/ThemeToggle';
+import LanguageDropdown from '../common/LanguageDropdown';
+import { useTranslation } from 'react-i18next';
 
 const NavigationHome = () => {
-  const [darkMode, setDarkMode] = useState(false);
   const [language, setLanguage] = useState('es');
   const [menuOpen, setMenuOpen] = useState(false);
-
-  const toggleTheme = () => {
-    setDarkMode(!darkMode);
-    document.body.classList.toggle('dark');
-  };
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
   const closeMenu = () => setMenuOpen(false);
 
+  const { t } = useTranslation();
+
   return (
-    <nav className="w-full flex items-center justify-between font-poppins text-sm uppercase font-medium text-secondary">
+    <nav className="w-full flex items-center justify-between font-poppins text-sm uppercase font-medium text-secondary dark:text-white">
      
       {/* Menú hamburguesa solo visible en móvil */}
       <div className="flex md:hidden gap-4 items-center">
@@ -34,32 +33,22 @@ const NavigationHome = () => {
             to={path}
             className={({ isActive }) =>
               `px-4 py-1 transition-colors duration-300 mx-auto ${
-                isActive ? 'bg-primary text-white' : 'hover:text-primary'
+                isActive ? 'bg-primary text-white' : 'hover:bg-primary hover:text-white dark:hover:text-secondary transition-all duration-200 '
               }`
             }
           >
-            {label}
+            {t(label)}
           </NavLink>
         ))}
       </div>
 
       {/* Selector de idioma + tema */}
       <div className="flex items-center gap-3">
-        {/* Selector de idioma */}
-        <select
-          value={language}
-          onChange={(e) => setLanguage(e.target.value)}
-          className="bg-transparent text-secondary border-none focus:outline-none cursor-pointer"
-        >
-          <option value="es">ES</option>
-          <option value="en">EN</option>
-          <option value="de">DE</option>
-        </select>
-
-        {/* Botón modo oscuro / claro */}
-        <button onClick={toggleTheme} className="text-xl hover:text-primary">
-          {darkMode ? <FaSun /> : <FaMoon />}
-        </button>
+        {/* Selector de idioma */}     
+        <LanguageDropdown language={language} setLanguage={setLanguage} />
+ 
+        {/* Botón modo oscuro / claro */}        
+          <ThemeToggle />
       </div>
 
       {/* Menú móvil desplegable */}
