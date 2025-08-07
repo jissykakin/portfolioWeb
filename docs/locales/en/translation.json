@@ -1,0 +1,25 @@
+{
+  "welcome": "HI, I AM",
+  "download": "Download CV",
+  "hireme": "Hire Me",
+  "roles": [
+    "System Engineer",
+    "Web Developer",
+    "Data Analyzer",
+    "UI/UX Designer",
+    "Graphic Designer"
+  ],
+  "menu": {
+    "home": "Home",
+    "about": "About",
+    "portfolio": "Portfolio",
+    "resume": "Resume",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "aboutsection_label":"About Me",
+  "aboutsection_title": "Why hire me for your project or company?",
+  "aboutsection_description_1": "I am a Systems Engineer graduated from the Corporación de la Costa with a specialization in automation and industrial process control, and a technological specialization in database administration.",
+  "aboutsection_description_2": "I consider myself a person with leadership skills, teamwork ability, and adaptability to change. I have a research-oriented, innovative, and creative mindset, along with a high degree of responsibility and commitment. I possess skills to analyze, design, develop, and coordinate technological projects. I am prepared with the will, knowledge, and enthusiasm to meet the challenges presented.",
+  "read_more": "READ MORE"
+}

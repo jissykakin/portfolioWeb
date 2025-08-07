@@ -1,0 +1,26 @@
+{
+  "welcome": "HOLA, YO SOY",
+  "download": "Descargar CV",
+  "hireme": "Contratame",
+   "roles": [
+    "Ingeniero de Sistemas",
+    "Desarrollador Web",
+    "Analista de Datos",
+    "Diseñador UI/UX",
+    "Diseñador Gráfico"
+  ],
+  "menu": {
+    "home": "Inicio",
+    "about": "Acerca de mí",
+    "portfolio": "Portafolio",
+    "resume": "Resumen",
+    "skills": "Habilidades",
+    "contact": "Contacto"
+  },
+  "aboutsection_label":"Sobre Mi",
+  "aboutsection_title": "¿Por qué contratarme para tu proyecto o empresa?",
+  "aboutsection_description_1": "Soy Ingeniera de sistemas egresada de la corporación de la costa en convenio con especialización en automatización y control de procesos Industriales y especialización tecnológica en administración de bases de datos.",
+  "aboutsection_description_2": "Me considero una persona con capacidad de liderazgo, trabajo en equipo, y adaptabilidad al cambio, con espíritu investigador, innovador y creativo, con un alto grado de responsabilidad y compromiso, con habilidades para analizar, diseñar, desarrollar y coordinar proyectos tecnológicos. Preparada con voluntad, conocimientos y entusiasmo para afrontar las exigencias planteadas.",
+  "read_more": "LEER MÁS"
+
+}
