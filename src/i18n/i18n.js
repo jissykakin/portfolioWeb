@@ -3,6 +3,8 @@ import { initReactI18next } from 'react-i18next';
 import HttpBackend from 'i18next-http-backend';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
+const base = import.meta.env.VITE_BASE_URL || '/';
+
 i18n
   .use(HttpBackend) // carga los archivos desde /locales/{lng}/translation.json
   .use(LanguageDetector) // detecta el idioma del navegador
@@ -12,7 +14,7 @@ i18n
     debug: false, // ponlo en true para ver logs
 
     backend: {
-      loadPath: `${import.meta.env.BASE_URL}locales/{{lng}}/{{ns}}.json`,
+      loadPath: `${base}locales/{{lng}}/{{ns}}.json`,
     },
     load: 'languageOnly',
 
