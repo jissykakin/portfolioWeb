@@ -12,7 +12,7 @@ i18n
     debug: false, // ponlo en true para ver logs
 
     backend: {
-      loadPath: '/locales/{{lng}}/{{ns}}.json',
+      loadPath: `${import.meta.env.BASE_URL}locales/{{lng}}/{{ns}}.json`,
     },
     load: 'languageOnly',
 

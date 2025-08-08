@@ -1,11 +1,14 @@
 import React from 'react'
 
+
+
 export const BannerHome = () => {
+  const base = import.meta.env.VITE_BASE_URL;
   return (
     <div className="relative w-full flex mt-0 bg-secondary h-full transition-all   ">
           <div className="flex justify-end items-end w-full">
               <img
-              src="/imgs/jissy-merlano.png"
+              src={`${base}imgs/jissy-merlano.png`}
               alt="Jissy Merlano"            
               className="max-w-sm md:max-w-sm lg:max-w-full h-full object-cover"
             />

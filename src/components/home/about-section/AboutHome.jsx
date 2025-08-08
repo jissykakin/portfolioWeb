@@ -133,6 +133,7 @@ import { useTranslation } from 'react-i18next';
 
 export const AboutHome = () => {
     const { t } = useTranslation();
+    const base = import.meta.env.VITE_BASE_URL;
   return (
     <section id="about" className="w-full bg-graylight dark:bg-secondary py-20 transition-all  ">
       <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 items-center ">
@@ -142,7 +143,7 @@ export const AboutHome = () => {
 
           <div className="relative w-full max-w-sm mt-20 left-22  md:left-19  ">
             <img
-              src="imgs/about.svg"
+              src={`${base}imgs/about.svg`} 
               alt="Jissy Merlano"
               className="w-[70%] sm:w-[80%]  transition-all md:w-full h-auto object-cover shadow-lg "
             />
