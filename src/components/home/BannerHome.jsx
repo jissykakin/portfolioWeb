@@ -15,7 +15,7 @@ export const BannerHome = () => {
           </div>
           
           {/* Caja flotante */}
-          <div className="absolute -bottom-6  lg:-left-26  bg-primary text-white  text-3xl  px-6 md:px-10 py-4 md:py-6 shadow-md text-center">
+          <div className="absolute -bottom-6  left-0 lg:-left-26  bg-primary text-white text-2xl  md:text-3xl  px-6 md:px-10 py-4 md:py-6 shadow-md text-center">
             <p><strong>Email:</strong> sicaji22@gmail.com</p>
             <p><strong>Phone:</strong> +57 300 80 3043</p>
           </div>

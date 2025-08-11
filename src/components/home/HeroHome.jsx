@@ -8,11 +8,11 @@ export const HeroHome = () => {
 
   return (
     <div className="flex flex-col gap-6 mb-5">
-      <div className="flex flex-col px-10 md:pl-40 py-10 lg:py-25 md:pt-30 animate-wigg mx-auto text-center md:mx-0 md:text-left    ">
+      <div className="flex flex-col px-5 md:pl-40 py-10 lg:py-25 md:pt-30 animate-wigg mx-auto text-center md:mx-0 md:text-left    ">
         <div className="flex flex-col gap-2  ">
           <p className="text-2xl md:text-3xl text-graymedium font-bold font-poppins uppercase pb-2">{t('welcome')}</p>
-          <h1 className="text-4xl md:text-5xl font-bold text-secondary dark:text-white font-poppins uppercase pb-4">Jissy Merlano</h1>
-          <h2 className="text-6xl md:text-7xl  font-bold text-primary font-ibm-plex-sans-condensed uppercase pb-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-secondary dark:text-white font-poppins uppercase pb-4">Jissy Merlano</h1>
+          <h2 className="text-5xl sm:text-6xl md:text-7xl  font-bold text-primary font-ibm-plex-sans-condensed uppercase pb-6">
             <Typewriter
               texts={roles}
               typingSpeed={100}
@@ -21,12 +21,12 @@ export const HeroHome = () => {
           </h2>
         </div>
 
-        <div className="flex flex-wrap gap-4 mt-8  mx-auto text-center md:mx-0 md:text-left ">
+        <div className="flex  flex-wrap gap-4 mt-8  mx-auto text-center md:mx-0 md:text-left ">
           <button 
             onClick={() => {
               document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
             }}
-          className="bg-primary text-white text-lg uppercase font-medium font-poppins px-6 py-2 border-b-2 border-b-primary-shadow transition duration-300 hover:-translate-y-1 hover:scale-105 hover:bg-orange-600">
+          className="bg-primary text-white text-md sm:text-lg uppercase font-medium font-poppins px-6 py-2 border-b-2 border-b-primary-shadow transition duration-300 hover:-translate-y-1 hover:scale-105 hover:bg-orange-600">
              {t('hireme')}
           </button>
           <a
@@ -39,7 +39,7 @@ export const HeroHome = () => {
         </div>
       </div>   
   
-     <div className="hidden md:flex flex-col gap-2 text-3xl text-secondary dark:text-white absolute left-12 md:top-1/3 lg:top-2/5 z-50">
+     <div className="hidden md:flex flex-col gap-2 text-3xl text-secondary dark:text-white absolute left-12 top-60 lg:top-70 z-50 ">
       {socialLinks.map(({ icon: Icon, url, name }) => (
         <a
           key={name}

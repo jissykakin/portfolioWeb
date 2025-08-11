@@ -11,15 +11,15 @@ import { socialLinks } from "../../../data/socialLinks";
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="bg-[#1E1E1E] text-white px-4 py-16">
-      <div className="max-w-5xl mx-auto">
+    <section id="contact"  className="bg-[#1E1E1E]  w-full text-white px-10 py-16">
+      <div className="w-full  mx-auto">
         {/* Título */}
         <h2 className="text-4xl md:text-5xl font-semibold text-center mb-12">
           Send me a <span className="text-primary">message</span>, I will be in touch with you shortly.
         </h2>
 
         {/* Formulario */}
-        <form className="grid md:grid-cols-3 gap-6">
+        <form className="grid  grid-cols-1 md:grid-cols-3 gap-6">
           <input
             type="text"
             placeholder="Your Name"

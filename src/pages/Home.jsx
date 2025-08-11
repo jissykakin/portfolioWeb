@@ -25,7 +25,7 @@ export const Home = () => {
           </div>
 
           {/* Columna derecha */}
-          <div className="flex flex-col flex-nowrap w-full h-full bg-amber-700 ">
+          <div className="flex flex-col flex-nowrap w-full h-full  ">
             <BannerHome />
           </div>
         </div>

@@ -37,7 +37,7 @@ export default function PortfolioSection() {
         
        
       </div>
-      <div className="relative">
+      <div className="relative ">
         <FloatingButton position = "right" children = "READ MORE"></FloatingButton>
       </div>
      

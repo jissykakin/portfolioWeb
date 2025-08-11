@@ -15,7 +15,7 @@ export default function PortfolioFilters({ selected, onSelect }) {
           <button
             key={filter}
             onClick={() => onSelect(filter)}
-            className={`w-full px-8 py-3 text-center text-black font-medium
+            className={`w-full px-8 py-3 text-center text-black text-xs sm:text-lg  font-medium
               hover:bg-graylight hover:text-primary  transition  ${
               selected === filter ? "bg-primary text-white transition delay-150 duration: 100 ease-in-out"  : ""
             }`}
