@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { FaSun, FaMoon, FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes } from 'react-icons/fa';
 import menuLinks from '../../data/menuLinks';
 import ThemeToggle from '../common/ThemeToggle';
 import LanguageDropdown from '../common/LanguageDropdown';
@@ -65,7 +65,7 @@ const NavigationHome = () => {
                 }`
               }
             >
-              {label}
+              {t(label)}
             </NavLink>
           ))}
         </div>

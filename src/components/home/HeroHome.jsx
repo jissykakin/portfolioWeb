@@ -1,6 +1,6 @@
 import Typewriter from '../common/Typewriter';
-import { socialLinks } from '../../data/socialLinks';
 import { useTranslation } from 'react-i18next';
+import SocialLinks from '../common/SocialLinks';
 
 export const HeroHome = () => {
   const { t } = useTranslation();
@@ -37,22 +37,9 @@ export const HeroHome = () => {
             {t('download')}
         </a>
         </div>
-      </div>   
-  
-     <div className="hidden md:flex flex-col gap-2 text-3xl text-secondary dark:text-white absolute left-12 top-60 lg:top-70 z-50 ">
-      {socialLinks.map(({ icon: Icon, url, name }) => (
-        <a
-          key={name}
-          href={url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="p-2 hover:bg-primary hover:text-white dark:hover:text-secondary transition duration-300 hover:-translate-y-1 hover:scale-110 "
-          aria-label={name}
-        >
-          <Icon />
-        </a>
-      ))}
-    </div>
+      </div>     
+
+    <SocialLinks layout='absolute'></SocialLinks>
   </div>
 
 
@@ -60,3 +47,4 @@ export const HeroHome = () => {
 }
 
 
+``

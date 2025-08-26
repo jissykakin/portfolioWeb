@@ -1,13 +1,9 @@
 import {
   FaEnvelope,
-  FaPhone,
-  FaLinkedin,
-  FaGithub,
-  FaYoutube,
-  FaDribbble,
-  FaCircleUp,
+  FaPhone 
 } from "react-icons/fa6";
-import { socialLinks } from "../../../data/socialLinks";
+
+import SocialLinks from "../../common/SocialLinks";
 
 export default function ContactSection() {
   return (
@@ -51,21 +47,9 @@ export default function ContactSection() {
           </div>
         </form>
 
-        {/* Íconos sociales */}   
-         <div className="flex flex-row  justify-center mt-8 gap-2 text-3xl text-white dark:text-white">
-              {socialLinks.map(({ icon: Icon, url, name }) => (
-                <a
-                  key={name}
-                  href={url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-2 rounded-3xl hover:bg-primary hover:text-secondary  transition duration-300 hover:-translate-y-1 hover:scale-110 "
-                  aria-label={name}
-                >
-                  <Icon />
-                </a>
-              ))}
-            </div>
+        {/* Íconos sociales */}   *       
+
+        <SocialLinks layout="row" ></SocialLinks>
 
         {/* Email y Teléfono */}
         <div className="flex justify-center gap-8 text-sm mt-6 text-gray-400 flex-wrap">

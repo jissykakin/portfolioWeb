@@ -1,9 +1,6 @@
-import React from 'react'
-
-
+const base = import.meta.env.VITE_BASE_URL;
 
 export const BannerHome = () => {
-  const base = import.meta.env.VITE_BASE_URL;
   return (
     <div className="relative w-full flex mt-0 bg-secondary h-full transition-all   ">
           <div className="flex justify-end items-end w-full">

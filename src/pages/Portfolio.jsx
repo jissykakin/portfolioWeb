@@ -1,9 +1,11 @@
-import { h1 } from 'framer-motion/client'
+
 import React from 'react'
 
-export const Portfolio = () => {
+ const Portfolio = () => {
   return (
 
     <h1>Portfolio</h1>
   )
 }
+
+export default Portfolio;
