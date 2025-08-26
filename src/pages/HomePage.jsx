@@ -1,5 +1,3 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
 import HeaderHome from '../components/home/HeaderHome';
 import { HeroHome } from '../components/home/HeroHome';
 import { BannerHome } from '../components/home/BannerHome';
@@ -11,7 +9,7 @@ import ContactSection from '../components/home/contact-section/ContactSection';
 
 
 
-export const Home = () => {
+export const HomePage = () => {
   return (
     <>
     
@@ -42,4 +40,4 @@ export const Home = () => {
   )
 }
 
-export default Home;
+export default HomePage;

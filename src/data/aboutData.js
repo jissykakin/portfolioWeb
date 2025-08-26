@@ -1,7 +1,7 @@
 import { FaBirthdayCake, FaCity, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 
 export const profile = {
-  img: `${import.meta.env.VITE_BASE_URL}imgs/abouthphoto.svg`,
+  img: `${import.meta.env.VITE_BASE_URL}imgs/aboutphoto.svg`,
   name: "Jissy Merlano",
   title: "System Engineer",
   description:

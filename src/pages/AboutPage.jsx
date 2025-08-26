@@ -1,5 +1,5 @@
-// import { FaBirthdayCake, FaCity, FaEnvelope, FaPhoneAlt   } from "react-icons/fa"; 
 
+import { useEffect } from "react";
 import InfoItem from "../components/about/InfoItem";
 import ProfileCard from "../components/about/ProfileCard";
 import StatCard from "../components/about/StatCard";
@@ -7,7 +7,12 @@ import TagGroup from "../components/about/TagGroup";
 import { contactInfo, hobbies, profile, softSkills, stats, texts } from "../data/aboutData";
 
 
-const About = () => {
+const AboutPage = () => {
+
+    useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   return (
     <div className="flex-1 w-full h-full overflow-hidden font-ibm-plex-sans p-2 text-secondary">
       <p className="text-lg font-medium italic">Nice to meet you!</p>
@@ -58,4 +63,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutPage;

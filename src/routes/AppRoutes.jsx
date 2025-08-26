@@ -12,15 +12,16 @@ import { Route,  Routes } from 'react-router-dom';
 
 
 // Importaciones normales (no lazy)
-const  Home  = lazy(() => import('../pages/Home'));
-const About = lazy(()=> import('../pages/About'));
-const Portfolio = lazy(()=> import('../pages/Portfolio'));
-const Services = lazy(()=> import('../pages/Services'));
-const Resume = lazy(()=> import('../pages/Experience'));
-const Contact = lazy(()=> import('../pages/Contact'));
+const  Home  = lazy(() => import('../pages/HomePage'));
+const About = lazy(()=> import('../pages/AboutPage'));
+const Portfolio = lazy(()=> import('../pages/PortfolioPage'));
+const Services = lazy(()=> import('../pages/ServicesPage'));
+const Resume = lazy(()=> import('../pages/ResumePage'));
+const Contact = lazy(()=> import('../pages/ContactPage'));
 
 import  HomeLayout  from '../layouts/HomeLayout';
 import MainLayout from '../layouts/MainLayout';
+import NotFoundPage from '../pages/NotFoundPage';
 
 
 
@@ -38,8 +39,12 @@ export default function AppRoutes() {
             <Route path='/about' element= {<About/>} />
             <Route path='/portfolio' element= {<Portfolio />} />
             <Route path='/services' element= {<Services/>} />
-            <Route path='/experience' element= {<Resume/>} />
+            <Route path='/resume' element= {<Resume/>} />
+            <Route path='/contact' element= {<Contact/>} />           
           </Route>
+
+          {/* Not Found (siempre al final) */}
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Suspense>   
 

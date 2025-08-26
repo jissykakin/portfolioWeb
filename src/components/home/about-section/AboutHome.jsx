@@ -55,7 +55,9 @@ export const AboutHome = () => {
             </p>
           </div>
           <div className="relative mt-6">
-            <FloatingButton position="right">{t('read_more')}</FloatingButton>
+            <FloatingButton position="right" to="/about">
+              {t("read_more")}
+            </FloatingButton>
           </div>
         </div>
       </div>
