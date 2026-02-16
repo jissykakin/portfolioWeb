@@ -5,20 +5,23 @@ import ProfileCard from "../components/about/ProfileCard";
 import StatCard from "../components/about/StatCard";
 import TagGroup from "../components/about/TagGroup";
 import { contactInfo, hobbies, profile, softSkills, stats, texts } from "../data/aboutData";
-
+import { useTranslation } from "react-i18next";
 
 const AboutPage = () => {
+
+  const { t } = useTranslation();
 
     useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
+ 
 
   return (
     <div className="flex-1 w-full h-full overflow-hidden font-ibm-plex-sans p-2 text-secondary">
-      <p className="text-lg font-medium italic">Nice to meet you!</p>
-      <h2 className="text-5xl font-bold">WELCOME TO...</h2>
+      <p className="text-lg font-medium italic"> {t('aboutpage_subtitle')}</p>
+      <h2 className="text-5xl font-bold">{t('aboutpage_title')}</h2>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 py-10">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 pt-12">
         {/* Perfil */}
         <div className="col-span-1">
           <ProfileCard {...profile} />
@@ -27,7 +30,7 @@ const AboutPage = () => {
         {/* Contenido */}
         <div className="col-span-2 px-8 ">
           {/* Contacto */}
-          <div className="grid grid-cols-2 font-medium text-lg italic gap-y-8 gap-x-15 pb-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 font-medium text-lg italic gap-y-8 gap-x-15 pb-5">
             {contactInfo.map((item, i) => (
               <InfoItem key={i} {...item} />
             ))}
@@ -36,24 +39,24 @@ const AboutPage = () => {
           <hr className="border-t border-gray-200 pb-8" />
 
           {/* Stats */}
-          <div className="grid grid-cols-2 font-medium gap-y-8 gap-x-15 pb-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 font-medium gap-y-8 gap-x-15 pb-5">
             {stats.map((stat, i) => (
               <StatCard key={i} {...stat} />
             ))}
           </div>
 
           {/* Textos */}
-          <div className="grid grid-cols-2 font-medium gap-y-8 gap-x-15 pb-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2  gap-y-8 gap-x-15 pb-5">
             {texts.map((t, i) => (
               <div key={i} className="flex flex-col gap-2 py-5">
                 <h3 className="text-xl font-black ">{t.title}</h3>
-                <p className="text-balance">{t.content}</p>
+                <p className="text-balance text-sm ">{t.content}</p>
               </div>
             ))}
           </div>
 
           {/* Hobbies y Soft Skills */}
-          <div className="grid grid-cols-2  gap-x-15 mb-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-8 gap-x-15 mb-2">
             <TagGroup title="Hobbies" items={hobbies} />
             <TagGroup title="Soft Skills" items={softSkills} />
           </div>

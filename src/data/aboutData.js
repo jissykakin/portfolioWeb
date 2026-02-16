@@ -6,7 +6,7 @@ export const profile = {
   title: "System Engineer",
   description:
     "Full Stack Developer | IT Coordinator | Graphic Design | Web Design UX/UI/Figma | Data Analytics",
-  cvLink: "/docs/JissyMerlanoCV.pdf",
+  cvLink: `${import.meta.env.VITE_BASE_URL}pdfs/CV_Jissy Merlano_Spanish.pdf`,
 };
 
 export const contactInfo = [

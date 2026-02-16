@@ -1,7 +1,4 @@
-import React from "react";
-import { FaArrowRight } from "react-icons/fa";
 import SideTag from "../../common/SideTag";
-import { FaSquareArrowUpRight } from "react-icons/fa6";
 import FloatingButton from "../../common/FloatingButton";
 
 import { useTranslation } from 'react-i18next';
