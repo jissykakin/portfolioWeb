@@ -1,4 +1,4 @@
-import{j as e,r as o,i as d,k as m,l as p,n as x,u as g}from"./index-CZqBB4Ee.js";const f=({icon:i,text:a})=>e.jsxs("div",{className:"flex gap-2 items-center text-lg italic",children:[e.jsx(i,{}),e.jsx("span",{children:a})]}),b=({img:i,name:a,title:s,description:t,cvLink:n})=>{const[r,c]=o.useState(!1);return e.jsxs("div",{className:"flex flex-col justify-center  content-between items-center w-full ",children:[e.jsx("img",{src:i,alt:a,onLoad:()=>c(!0),className:`
+import{j as e,r as o,i as d,k as m,l as p,n as x,u as g}from"./index-xA_BHw3l.js";const f=({icon:i,text:a})=>e.jsxs("div",{className:"flex gap-2 items-center text-lg italic",children:[e.jsx(i,{}),e.jsx("span",{children:a})]}),b=({img:i,name:a,title:s,description:t,cvLink:n})=>{const[r,c]=o.useState(!1);return e.jsxs("div",{className:"flex flex-col justify-center  content-between items-center w-full ",children:[e.jsx("img",{src:i,alt:a,onLoad:()=>c(!0),className:`
             max-w-sm md:max-w-sm lg:max-w-full h-full object-cover
             transition-opacity duration-1000 animate-ease-in
             ${r?"opacity-100":"opacity-0"}
